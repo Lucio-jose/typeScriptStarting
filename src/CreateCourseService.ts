@@ -1,16 +1,17 @@
 
 
-
 interface Curso{
-    name:string,
-    duration: Number,
-    educator: string
+    nome: string,
+    descricao: string,
+    duracao: string,
+    professor: string
 }
 
-class CreateCourseService{
 
-    execute({name, duration, educator}: Curso){
-        console.log(name, duration, educator)
+class CreateCurso{
+
+    execute({nome,descricao, duracao, professor}:Curso){
+        console.log(nome, descricao, professor, duracao)
     }
 }
-export default new CreateCourseService();
+export default new CreateCurso()

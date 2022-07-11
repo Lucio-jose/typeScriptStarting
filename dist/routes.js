@@ -5,11 +5,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createCourse = void 0;
 const CreateCourseService_1 = __importDefault(require("./CreateCourseService"));
-function createCourse(request, response) {
+function createCourse(req, res) {
     CreateCourseService_1.default.execute({
-        name: "HTML-CSS",
-        educator: "Lucio José",
-        duration: 9
+        nome: "string",
+        descricao: "string",
+        duracao: "string",
+        professor: "string"
     });
 }
 exports.createCourse = createCourse;

@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class CreateCourseService {
-    execute({ name, duration, educator }) {
-        console.log(name, duration, educator);
+class CreateCurso {
+    execute({ nome, descricao, duracao, professor }) {
+        console.log(nome, descricao, professor, duracao);
     }
 }
-exports.default = new CreateCourseService();
+exports.default = new CreateCurso();
