@@ -7,10 +7,11 @@ exports.createCourse = void 0;
 const CreateCourseService_1 = __importDefault(require("./CreateCourseService"));
 function createCourse(req, res) {
     CreateCourseService_1.default.execute({
-        nome: "string",
-        descricao: "string",
-        duracao: "string",
-        professor: "string"
+        nome: "HTML-CSS-Js",
+        descricao: "programação web",
+        duracao: "6 meses",
+        professor: "Lucio-jose"
     });
+    return res.send();
 }
 exports.createCourse = createCourse;

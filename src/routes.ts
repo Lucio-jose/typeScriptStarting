@@ -5,9 +5,11 @@ import CreateCourseService from "./CreateCourseService";
 
 export function createCourse(req:Request, res:Response){
     CreateCourseService.execute({
-        nome: "string",
-    descricao: "string",
-    duracao: "string",
-    professor: "string"
+        nome: "HTML-CSS-Js",
+    descricao: "programação web",
+    duracao: "6 meses",
+    professor: "Lucio-jose"
     })
+
+    return res.send();
 }

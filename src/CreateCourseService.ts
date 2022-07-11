@@ -2,7 +2,7 @@
 
 interface Curso{
     nome: string,
-    descricao: string,
+    descricao?: string, //Opcional
     duracao: string,
     professor: string
 }
